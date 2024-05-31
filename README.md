@@ -100,7 +100,7 @@ flexlm/tmp -> /usr/tmp
 ### Creación y configuración de servicio flexlm con systemd
 
 Plantilla (lo más genérica para reutilizar) para systemd  de flexlm. El creamos y editamos el fichero flexlm.service. 
-``` 
+```
 [Unit]
 Description=Servicio para ejecutar el servidor licencias flexlm
 After=network.target
