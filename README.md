@@ -82,6 +82,7 @@ Plantilla (lo más genérica para reutilizar) para systemd  de flexlm. El creamo
 [Unit]
 Description=Servicio para ejecutar el servidor licencias flexlm
 After=network.target
+
 [Service]
 User=flexlm
 Type=simple
@@ -93,8 +94,10 @@ RestartSec=30
 ExecStart=/opt/flexlm/bin/lmgrd -z -c /opt/flexlm/lic/licencia.lic -l +/var/log/flexlm/flexlm.log
 ExecReload=/opt/flexlm/bin/lmutil lmreread -c licencia.lic
 ExecStop=/opt/flexlm/bin/lmutil lmdown -c licencia.lic -q -force
+
 [Install]
 WantedBy=multi-user.target
+
 ```
 Se copia el fichero flexlm.service  a  la carpeta: /etc/systemd/system/
 
