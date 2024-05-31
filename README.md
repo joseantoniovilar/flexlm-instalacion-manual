@@ -1,6 +1,6 @@
-#Instalación  manual de los binarios de FLEXlm en Debian bookworm
+# Instalación  manual de los binarios de FLEXlm en Debian bookworm
 
-###Instalación de paquetes y configuración del entorno
+### Instalación de paquetes y configuración del entorno
 
 ```
 sudo apt update
