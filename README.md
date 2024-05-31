@@ -160,7 +160,7 @@ Revisamos la librerías que hacen falta para lmgrd proporcionado por Mathworks
 file lmgrd
 lmgrd: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-lsb-x86-64.so.3, for GNU/Linux 2.6.18, stripped
 ```
-Necesitamos la librería ld-lsb-x86-64.so.3 en el directorio /lib/64. Esta librería esta en el paquete lsb_core[^3] que esta descontinuada.
+Necesitamos la librería ld-lsb-x86-64.so.3 en el directorio /lib/64. Esta librería esta en el paquete lsb_core que esta descontinuada.
 Enlazamos la librería /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2 con ld-lsb-x86-64.so.3 para corregir el error
 ```
 cd /lib64
