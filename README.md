@@ -9,9 +9,10 @@ sudo apt install libc6-i386
 sudo apt install binutils
 sudo apt install lsb-release
 sudo apt install tree
----
+```
 
 La instalación se realiza manualmente en el directorio * /opt * son binarios de terceros y sin dependencias del sistema. Se elige este directorio porque en la actualizaciones  evita tocarlo. Crear el usuario y grupo flexlm de sistema
+
 ```
 useradd flexlm -b /opt/flexlm -c "Usuario flexlm" -s /sbin/nologin --system
 grep flexlm /etc/group
