@@ -74,29 +74,7 @@ sudo chown -R flexlm /opt/flexlm
 sudo chmod -R 0700 /opt/flexlm/bin
 sudo chmod 644 /opt/flexlm/lic/licence_2024a.lic
 ```
-### Estructura final y ficheros del directorio /opt/flexlm
 
-```
-flexlm/bin
-keycheck
-lmborrow
-lmdiag
-lmdown
-lmgrd
-lmhostid
-lmremove
-lmreread
-lmstat
-lmswitchr
-lmutil
-lmver
-MLM
-ParallelServerLicenseCheck
-flexlm7/lic
-licence_r2024a.lic
-licencia.lic -> licence_r2024a.lic
-flexlm/tmp -> /usr/tmp
-```
 ### Creación y configuración de servicio flexlm con systemd
 
 Plantilla (lo más genérica para reutilizar) para systemd  de flexlm. El creamos y editamos el fichero flexlm.service. 
